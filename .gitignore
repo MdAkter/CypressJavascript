@@ -1,0 +1,5 @@
+node_modules/
+cypress.fixures/*.json
+cypress/videos
+cypress/screenshots
+TestReport
