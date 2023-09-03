@@ -16,7 +16,7 @@ it('First test case',function(){
 
  const homePage = new HomePage()
  const productPage = new ProductPage()
-cy.visit('https://rahulshettyacademy.com/angularpractice/');
+cy.visit(Cypress.env('url')+"/angularpractice/");
 homePage.getNameText().type(this.data.name)
 homePage.getGenderComboBox().select(this.data.gender)
 homePage.getTwowayBindingText().should('have.value', this.data.name)
