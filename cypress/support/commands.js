@@ -22,6 +22,18 @@
     }
 })
 })
+
+Cypress.Commands.add('LoginAPI', ()=>{
+    cy.request('POST', 'https://rahulshettyacademy.com/api/ecom/auth/login', 
+    {"userEmail":"nucden@gmail.com","userPassword":"Nahh@2910"}).
+    then(function(response){
+        expect(response.status).to.be.eq(200)
+        cy.log(" token value is : "+response.body.token)
+        Cypress.env('token', response.body.token)
+    })
+
+})
+
 //
 //
 // -- This is a child command --
