@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register'; // No 3. ---This is for the mocha reporter that is added here
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

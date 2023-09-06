@@ -3,3 +3,4 @@ cypress.fixures/*.json
 cypress/videos
 cypress/screenshots
 TestReport
+cypress/reports
